@@ -88,6 +88,4 @@ Creating new submission posts in `bot_submissions.py` - 2 points
 Upvoting and Downvoting for a political agenda using TextBlob - 4 points
 
 **Total points = 29/30**
-
-    Provides a link to your favorite thread involving your bot, an image screenshot of the thread, and a short description of what you like about it. (Below each comment is a button labeled permalink that lets you link to a comment.)
    
