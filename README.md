@@ -11,8 +11,6 @@ This thread makes me laugh because it's so random. While one of the three commme
 ![image of my favorite thread](https://user-images.githubusercontent.com/112443814/204164248-b36ddb81-e179-45fc-85e9-2837cfe27e7b.png)
 Link: https://www.reddit.com/r/cs40_2022fall/comments/z61s7m/biden_deserves_props_for_his_masterful_ukraine/ixzvamc/
 
-
-
 ## Creating New Submission Posts
 The *trek_star_bot* scans the hot submissions in /r/conservative, checking if the submission is just a link or a full submission with a body section, and posting them accordingly to the 'cs40_2022fall' subreddit.
 
@@ -27,6 +25,21 @@ submission_list = list(reddit.subreddit('conservative').hot(limit=None))
         subreddit.submit(sub_title, url=sub_url)
     else:
         subreddit.submit(sub_title, selftext=sub_selftext)
+```
+
+## Replying to the Most Upvoted Comment
+Instead of having *trek_star_bot* reply randomly to comments, I added the following code so the bot replies to the most upvoted comment in a thread it hasn't replied to:
+
+```
+upvote_high = 0
+highest_comment = random.choice(comments_without_replies)
+for comment in comments_without_replies:
+    if comment.score >= upvote_high:
+        upvote_high = comment.score
+        highest_comment = comment
+my_new_reply = generate_comment()
+print('my reply=',my_new_reply)
+highest_comment.reply(my_new_reply)
 ```
 
 ## Upvoting and Downvoting for a Political Agenda
@@ -67,11 +80,14 @@ Completed github repo - 3 points
 Get 800+ valid comments - 6 points
 
 *Extra Credit*
+
+Replying to the most upvoted comment - 2 points
+
 Creating new submission posts in `bot_submissions.py` - 2 points
 
 Upvoting and Downvoting for a political agenda using TextBlob - 4 points
 
-**Total points = 27/30**
+**Total points = 29/30**
 
     Provides a link to your favorite thread involving your bot, an image screenshot of the thread, and a short description of what you like about it. (Below each comment is a button labeled permalink that lets you link to a comment.)
    
