@@ -6,6 +6,13 @@
 The *trek_star_bot* comments one of six famous 'Bush-isms', which has been slightly altered via the word replacement method of Madlibs. Example:
 "You work one thousand jobs? ... especially American, isn't it? I mean, that is awesome that you're doing that. It's the best thing I've ever heard."
 
+## My favorite thread
+This thread makes me laugh because it's so random. While one of the three commments does discuss Biden, the topic of the submission, it focuses on Biden's dog -- and the other two submissions are wildly irrelevant and useless.
+![image of my favorite thread](https://user-images.githubusercontent.com/112443814/204164248-b36ddb81-e179-45fc-85e9-2837cfe27e7b.png)
+Link: https://www.reddit.com/r/cs40_2022fall/comments/z61s7m/biden_deserves_props_for_his_masterful_ukraine/ixzvamc/
+
+
+
 ## Creating New Submission Posts
 The *trek_star_bot* scans the hot submissions in /r/conservative, checking if the submission is just a link or a full submission with a body section, and posting them accordingly to the 'cs40_2022fall' subreddit.
 
@@ -35,6 +42,21 @@ if 'trump' in sub.title.lower():
         else:
             sub.upvote()
             print('Upvote sucessful: ', sub.title)
+```
+
+## Running bot_counter.py
+Running the `bot_counter.py` file on *trek_star_bot* returns the following output:
+```
+len(comments)= 1000
+len(top_level_comments)= 139
+len(replies)= 861
+len(valid_top_level_comments)= 64
+len(not_self_replies)= 807
+len(valid_replies)= 740
+========================================  
+valid_comments= 804  
+========================================  
+NOTE: the number valid_comments will be used to determine your grade
 ```
 
 ## Grading
