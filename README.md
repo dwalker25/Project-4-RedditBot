@@ -83,9 +83,9 @@ Get 800+ valid comments - 6 points
 
 Replying to the most upvoted comment - 2 points
 
-Creating new submission posts in `bot_submissions.py` - 2 points
+Creating 200+ submission posts using `bot_submissions.py` - 2 points
 
-Upvoting and Downvoting for a political agenda using TextBlob - 4 points
+Upvoting and Downvoting for a political agenda using TextBlob on 100+ submissions - 4 points
 
 **Total points = 29/30**
    
